@@ -26,6 +26,7 @@
 
 
   <title>Academic Project Page</title>
+  <!--网页图标-->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -128,8 +129,24 @@
  </div>
 </section>
 <!-- End paper abstract -->
-
-
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="90%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        We uncover a vulnerability in LoRA fine-tuned models wherein an attacker is able to undo the fine-tuning process and recover the weights of the original pre-trained model. 
+        Our method, <em>Spectral DeTuning</em>, can perform the attack in an unsupervised and data-free manner on real models such as Stable Diffusion and Mistral. 
+        For simplicity, we illustrate the attack on a single layer, in reality, the attack is carried out independently on all the fine-tuned layers.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
 
 <!--修改部分方法介绍-->
 <section class="section hero is-small">
